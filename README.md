@@ -1,8 +1,5 @@
 # Quiz Application
-
-<!-- [![Tests](https://img.shields.io/github/workflow/status/dark7lord/quiz-test/Continuous%20Integration/main?label=tests)](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml)
-[![Linting](https://img.shields.io/github/workflow/status/dark7lord/quiz-test/Continuous%20Integration/main?label=linting)](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml)
-[![Cypress Tests](https://img.shields.io/github/workflow/status/dark7lord/quiz-test/Continuous%20Integration/main?label=cypress%20tests)](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml) -->
+[![Actions Status](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml/badge.svg)](https://github.com/dark7lord/quiz-test/actions)
 
 
 Это простое веб-приложение для прохождения викторин. Пользователи могут выбирать вопросы из различных категорий и уровней сложности, чтобы проверить свои знания по различным темам.

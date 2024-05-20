@@ -1,5 +1,10 @@
 # Quiz Application
 
+<!-- [![Tests](https://img.shields.io/github/workflow/status/dark7lord/quiz-test/Continuous%20Integration/main?label=tests)](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml)
+[![Linting](https://img.shields.io/github/workflow/status/dark7lord/quiz-test/Continuous%20Integration/main?label=linting)](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml)
+[![Cypress Tests](https://img.shields.io/github/workflow/status/dark7lord/quiz-test/Continuous%20Integration/main?label=cypress%20tests)](https://github.com/dark7lord/quiz-test/actions/workflows/ci.yml) -->
+
+
 Это простое веб-приложение для прохождения викторин. Пользователи могут выбирать вопросы из различных категорий и уровней сложности, чтобы проверить свои знания по различным темам.
 
 ## Установка
@@ -8,7 +13,7 @@
 2. Склонируйте репозиторий на ваш компьютер:
 
    ```bash
-   git clone https://github.com/your-username/quiz-application.git
+   git clone https://github.com/dark7lord/quiz-application.git
 3. Перейдите в директорию проекта:
    ```bash
    cd quiz-application

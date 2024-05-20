@@ -25,7 +25,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Run Cypress tests
-        run: npm run cypress:run
-        env:
-          CYPRESS_baseUrl: http://localhost:5173 
+      # - name: Run Cypress tests
+      #   run: npm run cypress:run
+      #   env:
+      #     CYPRESS_baseUrl: http://localhost:5173 

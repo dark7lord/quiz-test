@@ -6,37 +6,28 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install dependencies
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      - run: npm install
+      - name: Install dependencies
+        run: npm install
 
-      - name: Build
+      - name: Run tests
+        run: npm run lint && npm run test && npm run cypress
+
+      - name: Build the project
         run: npm run build
-        
-    #   - name: Deploy to GitHub Pages
-    #     env:
-    #       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-    #     run: |
-    #       git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    #       git config --global user.name "github-actions[bot]"
-    #       git remote set-url origin "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git"
-    #       git add dist -f
-    #       git commit -m 'Deploy to GitHub Pages'
-    #       git push origin `git subtree split --prefix dist main`:gh-pages --force
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
+      - name: Deploy to GitHub Pages
+        env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: public
-          CLEAN: true
+        run: npm run deploy

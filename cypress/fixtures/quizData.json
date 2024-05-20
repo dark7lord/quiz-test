@@ -1,0 +1,29 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Mythology",
+      "question": "According to the Egyptian Myth of Osiris, who murdered Osiris?",
+      "correct_answer": "Set",
+      "incorrect_answers": ["Horus", "Ra", "Anhur"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Music",
+      "question": "Which of these aliases has NOT been used by electronic musician Aphex Twin?",
+      "correct_answer": "Burial",
+      "incorrect_answers": ["Caustic Window", "Bradley Strider", "GAK"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "What was Dorothy&#039;s surname in &#039;The Wizard Of Oz&#039;?",
+      "correct_answer": "Gale",
+      "incorrect_answers": ["Perkins", "Day", "Parker"]
+    }
+  ]
+}

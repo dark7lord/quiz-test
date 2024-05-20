@@ -32,12 +32,13 @@ const CorrectAnswerText = styled.span`
 `;
 
 const QuizResultsTabs: React.FC<ResultsProps> = ({ results }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderListItem = (item: any) => (
-    <List.Item>
+      <List.Item>
       <List.Item.Meta
         title={decodeHtmlEntities(item.question.question)}
         description={
-          <>
+            <>
             <div>
               Your answer: {item.selected.map(decodeHtmlEntities).join(", ")}
             </div>
@@ -49,10 +50,11 @@ const QuizResultsTabs: React.FC<ResultsProps> = ({ results }) => {
             </div>
           </>
         }
-      />
+        />
     </List.Item>
   );
-
+  
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderTabPane = (level: string, filteredResults: any) => ({
     label: capitalize(level),
     key: level,

@@ -2,11 +2,18 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Question from "./Question";
 
-const quizAPI =  "https://opentdb.com/api.php?amount=10&type=multiple";
+const quizAPI = "https://opentdb.com/api.php?amount=10&type=multiple";
 
-const Quiz: React.FC<{ onFinishQuiz: (results: any[]) => void }> = ({ onFinishQuiz }) => {
+interface QuizProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  onFinishQuiz: (results: any[]) => void;
+}
+
+const Quiz: React.FC<QuizProps> = ({ onFinishQuiz }: QuizProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [answers, setAnswers] = useState<any[]>([]);
 
   useEffect(() => {
